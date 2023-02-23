@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Sans-Serif;
+}
+
+
+.nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav .logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #80411e;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+#google_element {
+    display: flex;
+    justify-content: right;
+    margin-top: 1%;
+    margin-left: 5px;
+}
+
+#google_element select {
+    background-color: #d2c1b0;
+    color: #6a4a3a;
+    border: none;
+    border-radius:3px;
+    padding: 6px 8px;
+    font-size: 13px;
+    width: 80%;
+}
+
+
+.goog-logo-link{
+    display: none!important;
+}
+
+.goog-te-gadget{
+    color: transparent!important;
+}
+
+.goog-te-banner-frame{
+    display:none !important;
+}
+
+#goog-gt-tt, .goog-te-balloon-frame {
+    display: none !important;
+}
+
+.goog-text-highlight { 
+    background: none !important;
+    box-shadow: none !important;
+}
+
+
+
+.home-content-1 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+
+}
+
+.text-box {
+    align-items: center;
+}
+
+.text-box h1 {
+    font-size: 35px;
+    color: #37251b;
+}
+
+.text-box p {
+    margin: 10px -10px 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.nav .fa {
+    display: none;
+}
+
+
+
+/*-------------Product Contents-------------*/
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #80411e, #d2c1b0);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #37251b;
+}
+
+.products-content {
+    width: 100%;
+    align-items: center;
+}
+
+.products-content h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 45px;
+    text-align: center;
+    margin: 100px 35% 10px 35%;
+    padding: 10px;
+    background-color: #6a4a3a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 5%;
+}
+
+.box {
+    width: 70%;
+    height: 450px;
+    background-color: #d8cbc4;
+    border-radius: 20px;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.box h2 {
+    font-weight: 500;
+    size: 20px;
+    margin-top: 10px;
+}
+
+.box p {
+    font-weight: 300;
+    size: 13px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.hero-btn {
+    margin-top: 3.5%;
+    min-width: 5%;
+    display: inline-block;
+    text-decoration: none;
+    color: #37251b;
+    border: 1px solid #37251b;
+    padding: 12px 14px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 46.5%;
+}
+
+.hero-btn:hover {
+    border: 1px #80411e;
+    background: #80411e;
+    color: white;
+    transition: 1s;
+}
+
+.box:hover {
+    border: 1px #80411e;
+    background: #80411e;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+/*----------Footer------------*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #efefef;
+    margin-top: 10%;
+}
+    
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.icons .fa {
+    color: #37251b;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+/*------------- For Phones-------------*/
+
+@media(max-width: 700px) {
+    .header {
+    min-height: 50vh;
+    }
+    .text-box h1 {
+        font-size: 40px;
+    }
+    .text-box p {
+        font-size: 13px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #80411e;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav .fa {
+        display: block;
+        color: #ffffff;
+        margin: 10px;
+        font: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+    .cupcake_home {
+    width: 200px;
+    }
+    .home_content_1 {
+    padding: 10% 10%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .products {
+        flex-direction: column;
+    }
+    .box {
+        margin-bottom: 5%;
+    }
+}
+

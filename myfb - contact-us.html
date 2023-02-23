@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bonbon Clouds</title>
+        
+        <link rel="stylesheet" href="css/style_5.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+<!-------------------- Header ---------------------->
+        <section class="sub-header">
+            <div class="nav">
+                <a href="myfb.html"><img src="images/logo.jpg" class="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="myfb.html">HOME</a></li>
+                        <li><a href="myfb - about.html">ABOUT US</a></li>
+                        <li><a href="myfb - products.html">PRODUCTS</a></li>
+                        <li><a href="myfb - partner.html">PARTNERS</a></li>
+                        <li><a href="myfb - contact-us.html">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <div id="google_element"></div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="home-content-1">
+                <div class="text-box">
+                    <h1>ORDER, REVIEWS, CONTACT US</h1>
+                    <p>Use our Customer Review Form to send an order, reviews, suggestions and inquiries. We would like to know what you think. You can also visit us on our Physical Store.</p>
+                <div>
+            </div>
+        </section>
+        
+        
+        
+<!-------------------Contact Us Contentt-------------------->
+        <section class="form-1">
+            <div class="form-header-1">
+                <div class="topline">
+                    <div class="top1"><strong>Customer Service Forms</strong></div>
+                    <div class="top2">Enter all necessary details depending on the type of form requested.</div>
+                </div>
+            </div>
+            <form action="/action_page.php" method="post">
+                <div class="input-area">
+                    <div class="clname">
+                        <label for="cname" required>Full Name</label>
+                        <input type="text" id="cname" name="cname" required/>
+                    </div>
+                    <div class="type-form">
+                        <label for="type-form">Type of Form</label>
+                        <select id="tf" name="tf">
+                            <option value="---Department---" selected="---Select Department---">---Select Type of Form---</option>
+                            <option value="order">Order Form</option>
+                            <option value="review">Review, Suggestions, and Inquiries Form</option>
+                        </select>
+                    </div>
+                    <div class="contactarea">
+                        <label for="contact">Preferred contact method</label>
+                        <input type="radio" id="email" name="contact1" 
+                        value="Email"/>
+                        <label for="email" id="em">Email</label>
+                        <input type="radio" id="phone" name="contact1" 
+                        value="Phone"/>
+                        <label for="phone" id="ph">Phone</label>
+                    </div>
+                    <div class="emailarea">
+                        <label for="email1">Email</label>
+                        <input type="email" id="email1" name="email1"/>
+                    </div>
+                    <div class="phonearea">
+                        <label for="phone1" required>Phone</label>
+                        <input type="tel" id="phone1" name="phone1" placeholder="0000-0000-000" pattern="[0-9]{4}-[0-9]{4}-[0-9]{3}"/>
+                    </div>
+                    <div class="shippingadd">
+                        <label for="shippingadd" required>Shipping Address</label>
+                        <input type="text" class="form-control" id="streetadd" placeholder="Street">
+                        <input type="text" class="form-control" id="inputaddress" placeholder="Address Line 2">
+                        <input type="text" class="form-control" id="inputcity" placeholder="City">
+                        <input type="text" class="form-control" id="inputState" placeholder="State/Region/Province">
+                        <input type="text" class="form-control" id="inputcountry" placeholder="Country">
+                        <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                    </div>
+                <div class="order">
+                    <h4>Product Order</h4>
+                    <p>(Maximum of 5 Pastries only)</p>
+                    <div class="product-choice">
+                        <div class="choice-1">
+                            <label for="order-name">Select Product</label>
+                            <select id="sp" name="sp">
+                                <option value="---Order---" selected="---Select Order---">---Select Order---</option>
+                                <option value="redvelvet-cup">Red Velvet Cup</option>
+                                <option value="mocha-cup">Mocha Cup</option>
+                                <option value="choco-cup">Choco Cup</option>
+                                <option value="caramel-cup">Caramel Cup</option>
+                                <option value="">Choco Chip</option>
+                                <option value="">Double Choco Chip</option>
+                                <option value="">Peanut Butter Chip</option>
+                                <option value="">Gingerbread Chip</option>
+                                <option value="">Red Velvet Ron</option>
+                                <option value="">Matcha Ron</option>
+                                <option value="">Strawberry Ron</option>
+                                <option value="">Chocolate Ron</option>
+                                <option value="">Strawberry Cake</option>
+                                <option value="">Chocolate Cake</option>
+                                <option value="">Banana Cake</option>
+                                <option value="">Carrot Cake</option>
+                                <option value="">Crossaint Bon</option>
+                                <option value="">Ensaymada Bon</option>
+                                <option value="">Garlic Bread Bon</option>
+                                <option value="">Cinnamon Roll Bon</option>
+                            </select>
+                        </div>
+                        <div class="choice-1">
+                            <label for="quantity">Quantity</label>
+                            <select id="quantity" name="quantity">
+                                <option value="---Quantity---" selected="---Select Quantity---">---Select Quantity---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-choice">
+                        <div class="choice-2">
+                            <label for="order-name">Select Product</label>
+                            <select id="sp" name="sp">
+                                <option value="---Order---" selected="---Select Order---">---Select Order---</option>
+                                <option value="redvelvet-cup">Red Velvet Cup</option>
+                                <option value="mocha-cup">Mocha Cup</option>
+                                <option value="choco-cup">Choco Cup</option>
+                                <option value="caramel-cup">Caramel Cup</option>
+                                <option value="">Choco Chip</option>
+                                <option value="">Double Choco Chip</option>
+                                <option value="">Peanut Butter Chip</option>
+                                <option value="">Gingerbread Chip</option>
+                                <option value="">Red Velvet Ron</option>
+                                <option value="">Matcha Ron</option>
+                                <option value="">Strawberry Ron</option>
+                                <option value="">Chocolate Ron</option>
+                                <option value="">Strawberry Cake</option>
+                                <option value="">Chocolate Cake</option>
+                                <option value="">Banana Cake</option>
+                                <option value="">Carrot Cake</option>
+                                <option value="">Crossaint Bon</option>
+                                <option value="">Ensaymada Bon</option>
+                                <option value="">Garlic Bread Bon</option>
+                                <option value="">Cinnamon Roll Bon</option>
+                            </select>
+                        </div>
+                        <div class="choice-2">
+                            <label for="quantity">Quantity</label>
+                            <select id="quantity" name="quantity">
+                                <option value="---Quantity---" selected="---Select Quantity---">---Select Quantity---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-choice">
+                        <div class="choice-2">
+                            <label for="order-name">Select Product</label>
+                            <select id="sp" name="sp">
+                                <option value="---Order---" selected="---Select Order---">---Select Order---</option>
+                                <option value="redvelvet-cup">Red Velvet Cup</option>
+                                <option value="mocha-cup">Mocha Cup</option>
+                                <option value="choco-cup">Choco Cup</option>
+                                <option value="caramel-cup">Caramel Cup</option>
+                                <option value="">Choco Chip</option>
+                                <option value="">Double Choco Chip</option>
+                                <option value="">Peanut Butter Chip</option>
+                                <option value="">Gingerbread Chip</option>
+                                <option value="">Red Velvet Ron</option>
+                                <option value="">Matcha Ron</option>
+                                <option value="">Strawberry Ron</option>
+                                <option value="">Chocolate Ron</option>
+                                <option value="">Strawberry Cake</option>
+                                <option value="">Chocolate Cake</option>
+                                <option value="">Banana Cake</option>
+                                <option value="">Carrot Cake</option>
+                                <option value="">Crossaint Bon</option>
+                                <option value="">Ensaymada Bon</option>
+                                <option value="">Garlic Bread Bon</option>
+                                <option value="">Cinnamon Roll Bon</option>
+                            </select>
+                        </div>
+                        <div class="choice-2">
+                            <label for="quantity">Quantity</label>
+                            <select id="quantity" name="quantity">
+                                <option value="---Quantity---" selected="---Select Quantity---">---Select Quantity---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-choice">
+                        <div class="choice-2">
+                            <label for="order-name">Select Product</label>
+                            <select id="sp" name="sp">
+                                <option value="---Order---" selected="---Select Order---">---Select Order---</option>
+                                <option value="redvelvet-cup">Red Velvet Cup</option>
+                                <option value="mocha-cup">Mocha Cup</option>
+                                <option value="choco-cup">Choco Cup</option>
+                                <option value="caramel-cup">Caramel Cup</option>
+                                <option value="">Choco Chip</option>
+                                <option value="">Double Choco Chip</option>
+                                <option value="">Peanut Butter Chip</option>
+                                <option value="">Gingerbread Chip</option>
+                                <option value="">Red Velvet Ron</option>
+                                <option value="">Matcha Ron</option>
+                                <option value="">Strawberry Ron</option>
+                                <option value="">Chocolate Ron</option>
+                                <option value="">Strawberry Cake</option>
+                                <option value="">Chocolate Cake</option>
+                                <option value="">Banana Cake</option>
+                                <option value="">Carrot Cake</option>
+                                <option value="">Crossaint Bon</option>
+                                <option value="">Ensaymada Bon</option>
+                                <option value="">Garlic Bread Bon</option>
+                                <option value="">Cinnamon Roll Bon</option>
+                            </select>
+                        </div>
+                        <div class="choice-2">
+                            <label for="quantity">Quantity</label>
+                            <select id="quantity" name="quantity">
+                                <option value="---Quantity---" selected="---Select Quantity---">---Select Quantity---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-choice">
+                        <div class="choice-2">
+                            <label for="order-name">Select Product</label>
+                            <select id="sp" name="sp">
+                                <option value="---Order---" selected="---Select Order---">---Select Order---</option>
+                                <option value="redvelvet-cup">Red Velvet Cup</option>
+                                <option value="mocha-cup">Mocha Cup</option>
+                                <option value="choco-cup">Choco Cup</option>
+                                <option value="caramel-cup">Caramel Cup</option>
+                                <option value="">Choco Chip</option>
+                                <option value="">Double Choco Chip</option>
+                                <option value="">Peanut Butter Chip</option>
+                                <option value="">Gingerbread Chip</option>
+                                <option value="">Red Velvet Ron</option>
+                                <option value="">Matcha Ron</option>
+                                <option value="">Strawberry Ron</option>
+                                <option value="">Chocolate Ron</option>
+                                <option value="">Strawberry Cake</option>
+                                <option value="">Chocolate Cake</option>
+                                <option value="">Banana Cake</option>
+                                <option value="">Carrot Cake</option>
+                                <option value="">Crossaint Bon</option>
+                                <option value="">Ensaymada Bon</option>
+                                <option value="">Garlic Bread Bon</option>
+                                <option value="">Cinnamon Roll Bon</option>
+                            </select>
+                        </div>
+                        <div class="choice-2">
+                            <label for="quantity">Quantity</label>
+                            <select id="quantity" name="quantity">
+                                <option value="---Quantity---" selected="---Select Quantity---">---Select Quantity---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-text">
+                        <p><label for="input-text">Reviews, Suggestions, and Inquiries</label></p>
+                        <textarea cols="30" rows="4" maxlength="100" id="text-input" name="text-input" placeholder="Input Reviews and Suggestions"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" id="sub" value="Submit"/>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="physical-address">
+            <div class="phy-add">
+                <h2>Visit Our Physical Store</h2>
+                <p>123 Main Street</br>Suite 456</br>Bacoor, Cavite 12345</br>Philippines</p>
+                <p>Tel. No.: XXX-XXX-XXXX</p>
+                <p>Email: bonbonclouds@gmail.com</p>
+            </div>
+        </section>
+<!--------------------Home Products------------------>
+<!----------------------Home Blog------------------------->
+<!---------------Call to Action--------------->
+<!----------------Footer------------------>
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>We are a local Pastry Shop that offers variety of products that will surely satisfy your cravings.<br>Browse with us to Learn More.</p>            
+            <div class="icons">
+               <a href="https://www.facebook.com/lanaza.nikka"><i class="fa fa-facebook"></i></a>
+               <a href="https://www.instagram.com/nkknz/"><i class="fa fa-instagram"></i></a>
+               <a href="https://twitter.com/_nkknz"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.linkedin.com/in/nikka-lanaza-7b20a2266/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            
+            <p>Made by Nikka Lanaza | DCPET 1-1</p>
+        </section>
+        
+       
+        
+<!--------------Javascript Toggle menu------------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                navLinks.style.right = "0px";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+        </script>
+        <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <script>
+            function loadGoogleTranslate() {
+                new google.translate.TranslateElement( {pageLanguage: 'en'},
+                'google_element');
+            }
+        </script>
+    </body>
+    
+</html>
